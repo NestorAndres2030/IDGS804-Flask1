@@ -1,7 +1,7 @@
 from flask import Flask
 from flask import request
 
-app = Flask(_name_)
+app = Flask(__name__)
 
 @app.route("/suma", methods=["GET","POST"])
 def suma():
@@ -43,7 +43,7 @@ def suma():
         '''
 
 
-if _name_ == "__main__": 
+if __name__ == "__main__": 
     app.run(
         debug = True,
         port = 3000
